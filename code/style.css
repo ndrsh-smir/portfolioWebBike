@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+.container{
+    width: 1590px;
+    padding: 0 45px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0;
+    align-self: center;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+.header {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__list-item a{
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    color: #8A8A8A;
+}
+
+/* Main */
+
+.main__wrapper {
+    display: grid;
+    min-height: 1750px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+    "biker-head biker-head buy-now bike-icon biker-road biker-road"
+    "biker-head biker-head biker-front biker-front equipment equipment"
+    "biker-woman biker-woman biker-front biker-front collection collection"
+    "biker-woman biker-woman biker-front biker-front helmet sales"
+    "biker-woman biker-woman accessories accessories biker-window biker-window"
+    "service service biker-two biker-two biker-window biker-window"
+    "service service biker-two biker-two contacts contacts";
+}
+
+.main__wrapper div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.main_wrapper div a{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__wrapper div img{
+    padding: 5px;
+}
+
+
+.main__biker-head-img {
+    grid-area: biker-head;
+    background-image: url(/imgs/El-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main__buy-now-link {
+    grid-area: buy-now;
+    background-color: #FFF4DE;
+}
+
+.main__bike-icon {
+    grid-area: bike-icon;
+    background-color: #80C7E3;
+}
+
+.main__biker-road-img {
+    grid-area: biker-road;
+    background-image: url(/imgs/El-4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main__biker-woman-img {
+    grid-area: biker-woman;
+    background-image: url(/imgs/El-5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main__biker-front-img {
+    grid-area: biker-front;
+    background-image: url(/imgs/El-6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+div.main__equipment-link {
+    grid-area: equipment;
+    color: #fff;
+    background-color: #EC0E44;
+}
+
+.main__collection-link {
+    grid-area: collection;
+    background-color: #FFF4DE;
+}
+
+.main__helmet-icon {
+    grid-area: helmet;
+    background-color: #80C7E3;
+}
+
+div.main__sales-link{
+    padding: 5px;
+    grid-area: sales;
+    background-color: #000;
+    color: #fff;
+}
+
+div.main__accessories-link {
+    grid-area: accessories;
+    color: #fff;
+    background-color: #EC0E44;
+}
+
+.main__service-link {
+    flex-direction: column;
+    grid-area: service;
+    background-color: #FFF4DE;
+}
+
+.main__service-link a{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main__service-link img{
+    padding: 0;
+    height: 50%;
+}
+
+.main__biker-two {
+    grid-area: biker-two;
+    background-image: url(/imgs/El-13.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main__biker-window {
+    grid-area: biker-window;
+    background-image: url(/imgs/El-14.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main__contacts-link {
+    grid-area: contacts;
+    background-color: #80C7E3;
+}
+
+/* Footer */
+
+
+.footer {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.footer__list-1, .footer__list-2 {
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul > li + li {
+    margin-top: 20px;
+}
+
+.footer_list-item, .footer__rights{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    color: #5A5A5A;
+}
+
+.footer__rights{
+    margin: 0;
+}
+
+.footer__rights span{
+    font-weight: 600;
+}
+
+@media (max-width: 1590px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container{
+        padding: 0 35px;
+        width: 100%;
+    }
+
+    .main__buy-now-link{
+        padding: 15px;
+    }
+}
+
+@media (max-width:1200px) {
+    div.main__buy-now-link{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container{
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .header{
+        gap: 30px;
+    }
+
+    .header__list-item:first-child{
+        display: none;
+    }
+
+    .main__container{
+        padding: 0;
+    }
+
+    .main__wrapper{
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+        "biker-head biker-head biker-head biker-head buy-now buy-now"
+        "biker-head biker-head biker-head biker-head bike-icon bike-icon"
+        "equipment equipment equipment equipment equipment equipment"
+        "helmet helmet biker-front biker-front biker-front biker-front"
+        "sales sales biker-front biker-front biker-front biker-front"
+        "contacts contacts biker-front biker-front biker-front biker-front"
+        "accessories accessories accessories collection collection collection"
+        "biker-road biker-road biker-road biker-window biker-window biker-window"
+        "biker-road biker-road biker-road biker-window biker-window biker-window"
+        "service service service service service service";
+    }
+
+    div.main__service-link img{
+        display: none;
+    }
+
+    div.main__buy-now-link{
+        font-size: 34px;
+    }
+
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px 0;
+        margin-bottom: 0;
+    }
+
+    .footer__rights{
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 730px) {
+    .container{
+        padding: 0;  
+    }
+
+    .header{
+        margin: 10px 0 30px 0;
+        justify-content: center;
+    }
+
+    .header__list{
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .main__wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas: 
+        "buy-now bike-icon"
+        "biker-head biker-head"
+        "biker-head biker-head"
+        "equipment equipment"
+        "biker-front helmet"
+        "biker-front sales"
+        "biker-front contacts"
+        "accessories accessories"
+        "collection collection"
+        "biker-two biker-window"
+        "service service";
+    }
+
+    .main__wrapper div{
+        font-size: 28px;
+        letter-spacing: normal;
+    }
+
+    .footer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        padding: 0 20px;
+        gap: 0;
+        width: 100%;
+    }
+
+    .footer ul > li + li {
+        margin-top: 25px;
+    }
+
+    .footer__list-1{
+        margin-top: 30px;
+    }
+
+    .footer__list-2{
+        margin-top: 25px;
+    }
+
+    .footer__rights{
+        text-transform: none;
+        margin: 30px 10px;
+    }
+}
